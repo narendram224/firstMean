@@ -1,0 +1,35 @@
+<div class="container hero">
+    <div class="row">
+        <div class="col-lg-10 col-xl-9 mx-auto">
+            <div class="card card-signin flex-row my-5">
+                <div class="card-img-left d-none d-md-flex">
+                    <!-- Background image for card set in CSS! -->
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title text-center">SigUp for Employee</h5>
+                    <form class="form-signin">
+                       
+                        <div class="form-label-group">
+                            <input [(ngModel)]="registeruserdata.email" class="form-control pl-3 " name="email" placeholder="Email" required >
+
+                        </div>
+
+                        <hr>
+
+                        <div class="form-label-group">
+                            <input [(ngModel)]="registeruserdata.password" type="password" class="form-control pl-3" name="password" placeholder="password" required>
+
+                        </div>
+
+                        <button class="btn btn-lg btn-primary btn-block text-uppercase" (click)="registerUser()" type="submit">Register<i class="fa fa-chevron-circle-right mr-2 fa-x"></i></button>
+                       
+                        <hr class="my-4">
+                        <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit" routerLink="login"><i class="fa fa-user mr-2"></i>Employee LogIn</button>
+                        <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit" routerLink="signup"><i class="fa fa-user mr-2"></i>Admin LogIn</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,50 @@
+<div class="container-fluid">
+	
+	
+<section class="hero">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-8 mx-auto">
+                <div class="card border-none">
+                    <div class="card-body">
+                        <div class="mt-2">
+                            <img src="https://s3.amazonaws.com/cureore/index_page_Images/Header_1_Logo" alt="Male" class="brand-logo mx-auto d-block img-fluid rounded" />
+                        </div>
+                        <p class="mt-4 text-white lead text-center">
+                            WELCOME TO EMPLOYEE LOGIN PAGE
+                        </p>
+                        <div class="mt-4">
+                            <form>
+
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input [(ngModel)]="loginuserdata.email" class="form-control" name="email" placeholder="Full Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Password</label>
+                                    <input [(ngModel)]="loginuserdata.password" type="password" class="form-control" name="password"   placeholder="position">
+                                </div>
+
+                                <div class="form-group text-cente">
+                                    <button class="btn btn-info" type="submit" (click)="loginUser()" ><i class="fa fa-user"></i>Login</button>
+
+                                </div>
+
+                            </form>
+
+                            <div class="clearfix"></div>
+                            <p class="content-divider center mt-4"><span>or</span></p>
+                        </div>
+
+                        <p class="text-center">
+                            <a routerLink="">Goto Home</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+</div>
